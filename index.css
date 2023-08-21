@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -12,6 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+   
     
 }
 
