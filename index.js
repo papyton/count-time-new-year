@@ -21,10 +21,14 @@ function countdown(){
     const mins = Math.floor((totalSeconds / 60 )% 60);
     const seconds = Math.floor (totalSeconds) % 60;
      
-     days1.innerHTML = days;
-     hours1.innerHTML = hours;
-     mins1.innerHTML = mins;
-     seconds1.innerHTML = seconds;
+     days1.innerHTML = formaTime(days);
+     hours1.innerHTML = formaTime(hours);
+     mins1.innerHTML =formaTime(mins);
+     seconds1.innerHTML = formaTime(seconds);
+}
+
+function formaTime(time){
+    return time < 10 ? (`0${time}`) : time;
 }
 
 countdown();
